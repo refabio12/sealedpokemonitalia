@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sealed Pokémon Italia — offerte verificate su Telegram</title>
+<meta name="description" content="Canale Telegram gratuito: offerte su display, ETB e bundle Pokémon sigillati in italiano da eBay e 11 negozi italiani. Restock, preordini e prezzi sotto il mercato, senza scalper né repack.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sealed Pokémon Italia — offerte verificate su Telegram">
+<meta property="og:description" content="Display, ETB e bundle Pokémon sigillati in italiano: restock, preordini e prezzi sotto il mercato da eBay e 11 negozi italiani. Gratis, senza scalper.">
+<meta property="og:locale" content="it_IT">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%A6%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #ffffff; --text: #0f172a; --muted: #475569;
+    --border: #e2e8f0; --accent: #2563eb; --accent-text: #ffffff;
+    --good: #15803d; --good-bg: #dcfce7; --warn-bg: #fef3c7; --warn: #92400e;
+    --hero-from: #0f172a; --hero-to: #1e3a8a; --hero-text: #f8fafc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b1120; --surface: #111827; --text: #e5e7eb; --muted: #94a3b8;
+      --border: #1f2937; --accent: #3b82f6; --good: #4ade80; --good-bg: #052e16;
+      --warn-bg: #3a2a05; --warn: #fcd34d; --hero-from: #020617; --hero-to: #172554;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+
+  header.hero { background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+    color: var(--hero-text); padding: 56px 0 48px; }
+  .hero h1 { font-size: clamp(28px, 6vw, 44px); line-height: 1.15; margin: 0 0 14px; letter-spacing: -0.02em; }
+  .hero p.lead { font-size: clamp(17px, 2.6vw, 20px); margin: 0 0 26px; color: #cbd5e1; max-width: 640px; }
+  .cta { display: inline-flex; align-items: center; gap: 10px; background: #229ed9; color: #fff;
+    text-decoration: none; font-weight: 700; font-size: 18px; padding: 14px 24px; border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(34, 158, 217, .35); }
+  .cta:hover { background: #1c8cc2; }
+  .cta svg { width: 22px; height: 22px; fill: currentColor; }
+  .hero .note { font-size: 14px; color: #94a3b8; margin-top: 14px; }
+  .stats { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 30px; font-size: 15px; color: #cbd5e1; }
+  .stats b { color: #fff; font-size: 20px; display: block; }
+
+  section { padding: 44px 0; border-bottom: 1px solid var(--border); }
+  h2 { font-size: clamp(22px, 4vw, 28px); margin: 0 0 18px; letter-spacing: -0.01em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .icon { font-size: 26px; display: block; margin-bottom: 6px; }
+
+  .post { background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 16px 18px; font-size: 15px; }
+  .post .t { font-weight: 700; margin-bottom: 6px; }
+  .post .p { font-weight: 700; font-size: 18px; }
+  .tag { display: inline-block; font-size: 13px; font-weight: 600; padding: 2px 9px; border-radius: 999px;
+    background: var(--good-bg); color: var(--good); margin-top: 8px; }
+  .tag.warn { background: var(--warn-bg); color: var(--warn); }
+  .post .shop { color: var(--muted); font-size: 14px; margin-top: 6px; }
+
+  ul.no { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  ul.no li::before { content: "✕"; color: #dc2626; font-weight: 700; margin-right: 8px; }
+  .shops { display: flex; flex-wrap: wrap; gap: 8px; }
+  .shops span { background: var(--surface); border: 1px solid var(--border); border-radius: 999px;
+    padding: 6px 12px; font-size: 14px; }
+
+  details { background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+
+  .final { text-align: center; padding: 56px 0; border-bottom: none; }
+  footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; text-align: center; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Le offerte vere sul sealed Pokémon in italiano.</h1>
+    <p class="lead">Un canale Telegram gratuito che controlla eBay e 11 negozi italiani giorno e notte,
+      e ti avvisa solo quando display, ETB e bundle costano davvero meno. Niente scalper, niente repack.</p>
+    <a class="cta" href="https://t.me/sealedpokemonitalia">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+      Unisciti al canale
+    </a>
+    <p class="note">Gratis · non vendo nulla · ti puoi disiscrivere quando vuoi</p>
+    <div class="stats">
+      <div><b>12</b>fonti controllate</div>
+      <div><b>ogni 5 min</b>anche di notte</div>
+      <div><b>17</b>espansioni seguite</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Cosa ricevi</h2>
+      <div class="grid">
+        <div class="card"><span class="icon">🔥</span><h3>Offerte sotto il prezzo</h3>
+          <p>Solo se almeno il 10% sotto il listino o il prezzo di mercato, calcolato sui negozi italiani e su Cardmarket.</p></div>
+        <div class="card"><span class="icon">🔔</span><h3>Restock</h3>
+          <p>Quando un negozio rimette in vendita un prodotto esaurito, come ETB e mini tin, ti avvisa subito.</p></div>
+        <div class="card"><span class="icon">🆕</span><h3>Preordini</h3>
+          <p>Apertura dei preordini delle nuove espansioni e il negozio con il prezzo più basso.</p></div>
+        <div class="card"><span class="icon">❌</span><h3>Post aggiornati</h3>
+          <p>Quando un'offerta finisce il post viene segnato come non più disponibile: niente click a vuoto.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Esempi reali di questi giorni</h2>
+      <div class="grid">
+        <div class="post">
+          <div class="t">🔥 ETB 30° Anniversario</div>
+          <div class="p">82,55 €</div>
+          <span class="tag">−19% sul prezzo di mercato</span>
+          <span class="tag warn">esaurito in 5 minuti</span>
+          <div class="shop">eBay · venditore con 100% di feedback</div>
+        </div>
+        <div class="post">
+          <div class="t">🔥 Set Allenatore Fuoriclasse Equilibrio Perfetto</div>
+          <div class="p">39,00 €</div>
+          <span class="tag">−40% sul listino</span>
+          <div class="shop">Cardgame Club</div>
+        </div>
+        <div class="post">
+          <div class="t">🏷 Display Dominio Delta (preordine)</div>
+          <div class="p">189,90 €</div>
+          <span class="tag">prezzo più basso tra 4 negozi</span>
+          <div class="shop">Federicstore · altrove 199,90–216,90 €</div>
+        </div>
+        <div class="post">
+          <div class="t">🔔 Restock ETB Buio Pesto</div>
+          <div class="p">54,90 €</div>
+          <span class="tag">di nuovo disponibile, −16% sul listino</span>
+          <div class="shop">Cardgame Club</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Cosa non vedrai mai</h2>
+      <ul class="no">
+        <li>Prodotti sopra il prezzo di mercato: niente scalper</li>
+        <li>Mystery box, repack, rip &amp; ship e aperture in live</li>
+        <li>Display "da 16 o 18 buste" o buste miste spacciate per bundle</li>
+        <li>Accessori, espositori e confezioni vuote</li>
+        <li>Venditori eBay con poche recensioni o feedback sotto il 98%</li>
+        <li>Lo stesso annuncio ripetuto tutti i giorni</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Dove cerca</h2>
+      <div class="shops">
+        <span>eBay</span><span>Cardgame Club</span><span>Federicstore</span><span>BSA Store</span>
+        <span>Cardverse</span><span>BaruZcard</span><span>Duels Point</span><span>One Catch Store</span>
+        <span>Magic Time</span><span>Pianeta Hobby</span><span>Toys Center</span><span>Dadi e Mattoncini</span>
+      </div>
+      <p style="color:var(--muted);font-size:15px;margin-top:16px">Display 36 buste, Set Allenatore Fuoriclasse (ETB),
+        bundle 6 buste, collezioni e mini tin: Megaevoluzione, Scarlatto e Violetto e 30° Anniversario.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Domande frequenti</h2>
+      <details><summary>È gratis?</summary>
+        <p>Sì. È un canale Telegram pubblico: ti iscrivi con un tocco e puoi uscire quando vuoi.</p></details>
+      <details><summary>Vendete qualcosa?</summary>
+        <p>No. Il canale segnala l'offerta con il link diretto al negozio o all'annuncio eBay: compri dove vuoi, come sempre.</p></details>
+      <details><summary>Come fate a sapere se un prezzo è buono?</summary>
+        <p>Il bot confronta ogni prezzo con il listino e con il prezzo di mercato, calcolato sulle inserzioni italiane
+          degli ultimi 30 giorni e sui dati di Cardmarket. Pubblica solo se lo sconto è reale.</p></details>
+      <details><summary>Riceverò troppe notifiche?</summary>
+        <p>No: le offerte escono una alla volta, di giorno. Di notte escono solo quelle eccezionali, senza notifica.
+          E puoi sempre silenziare il canale e guardarlo quando vuoi.</p></details>
+      <details><summary>Solo prodotti in italiano?</summary>
+        <p>Sì, solo sealed in italiano. Gli annunci in altre lingue vengono scartati.</p></details>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Non perdere il prossimo restock</h2>
+      <a class="cta" href="https://t.me/sealedpokemonitalia">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+        t.me/sealedpokemonitalia
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Progetto indipendente di un collezionista. Non affiliato a Nintendo, The Pokémon Company, Game Freak
+    né ai negozi citati. Pokémon è un marchio dei rispettivi proprietari.
+  </div>
+</footer>
+
+</body>
+</html>
