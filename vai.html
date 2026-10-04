@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Apertura dell'offerta…</title>
+<style>body{font:16px system-ui,sans-serif;background:#0f172a;color:#e2e8f0;display:grid;place-items:center;
+height:100vh;margin:0;text-align:center}a{color:#93c5fd}</style>
+</head>
+<body>
+<p id="m">Apertura dell'offerta…</p>
+<script>
+(function () {
+  var HOSTS = ["baruzcard.it", "bsastore.it", "cardgameclub.it", "cardverse.it", "dadiemattoncini.it", "duelspoint.it", "ebay.com", "ebay.de", "ebay.es", "ebay.fr", "ebay.it", "federicstore.it", "ibs.it", "magictime.it", "mediaworld.it", "onecatchstore.com", "otakura.com", "pianetahobby.it", "t.me", "toyscenter.it"];
+  var CODE = "";
+  var q = new URLSearchParams(location.search);
+  var u = q.get("u") || "", p = q.get("p") || "link";
+  var host = "";
+  try { var x = new URL(u); host = x.hostname.replace(/^www\./, ""); if (x.protocol !== "https:" && x.protocol !== "http:") host = ""; } catch (e) {}
+  var ok = HOSTS.some(function (h) { return host === h || host.endsWith("." + h); });
+  if (!ok) {
+    document.getElementById("m").innerHTML = 'Link non valido. <a href="index.html">Vai al canale</a>';
+    return;
+  }
+  var go = function () { location.replace(u); };
+  if (CODE) {
+    var img = new Image();
+    img.onload = img.onerror = go;
+    img.src = "https://" + CODE + ".goatcounter.com/count?e=true&p=" + encodeURIComponent("click/" + p) +
+              "&t=" + encodeURIComponent(p) + "&rnd=" + Math.random();
+    setTimeout(go, 800);           // mai bloccare l'utente se il contatore e' lento
+  } else {
+    go();
+  }
+})();
+</script>
+<noscript><p>Attiva JavaScript per aprire l'offerta.</p></noscript>
+</body>
+</html>
